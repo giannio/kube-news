@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: meupod-azul
+spec:
+  containers:
+  - name: site
+    image: giannio/kube-news:v1
+    ports:
+    - containerPort: 80
+---
