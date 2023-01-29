@@ -29,7 +29,7 @@ pipeline {
 
             steps{
                 withKubeConfig([credentialsId:'kubeconfig']){
-                    sh 'kubectl apply -f ./opt/desafio2-kubenews/kube-news/desafio2/deployment.yaml'
+                    sh 'kubectl apply -f ./desafio2/deployment.yaml'
                 }                
             }
         }
